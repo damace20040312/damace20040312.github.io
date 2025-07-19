@@ -155,7 +155,6 @@ function mostrarMercados() {
 }
 
 
-
 function mostrarHoteles() {
   clearMap();
   const bounds = L.latLngBounds([]);
@@ -203,12 +202,35 @@ function mostrarSitiosTuristicos() {
   }
 }
 
+function scrollToMapa() {
+  const mapaElemento = document.getElementById("mapa");
+  if (mapaElemento) {
+    mapaElemento.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+document.getElementById("btn-restaurantes").onclick = () => {
+  mostrarRestaurantes();
+  scrollToMapa();
+};
+
+document.getElementById("btn-mercados").onclick = () => {
+  mostrarMercados();
+  scrollToMapa();
+};
+
+document.getElementById("btn-hoteles").onclick = () => {
+  mostrarHoteles();
+  scrollToMapa();
+};
+
+document.getElementById("btn-sitios").onclick = () => {
+  mostrarSitiosTuristicos();
+  scrollToMapa();
+};
 
 
-document.getElementById("btn-restaurantes").onclick = mostrarRestaurantes;
-document.getElementById("btn-mercados").onclick = mostrarMercados;
-document.getElementById("btn-hoteles").onclick = mostrarHoteles;
-document.getElementById("btn-sitios").onclick = mostrarSitiosTuristicos;
+
 
 
 
