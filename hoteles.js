@@ -143,3 +143,29 @@ function centrarEnMapa(lat, lng) {
 
   document.getElementById("mapa").scrollIntoView({ behavior: "smooth" });
 }
+
+// Intentar obtener la ubicación del usuario
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      const lat = position.coords.latitude;
+      const lng = position.coords.longitude;
+
+      // Añadir un marcador o círculo en la ubicación del usuario
+      const userMarker = L.circleMarker([lat, lng], {
+        radius: 8,
+        color: 'blue',
+        fillColor: '#3f51b5',
+        fillOpacity: 0.7
+      }).addTo(map).bindPopup("Estás aquí").openPopup();
+
+      // Centrar el mapa en la ubicación del usuario
+      map.setView([lat, lng], 15);
+    },
+    (error) => {
+      console.warn("No se pudo obtener la ubicación del usuario:", error.message);
+    }
+  );
+} else {
+  console.warn("Geolocalización no soportada por este navegador.");
+}
