@@ -31,7 +31,7 @@ const restaurantes = [
   { nombre: "12 Sabores Restaurante", lat: -17.19474084508858, lng:-70.92558198994463, imagen: "imagenes/rest11.jpg" },
 
   { nombre: "Rest Campestre Fundo Chaparral Chen Chen", lat: -17.20878187547896, lng:-70.9199815381973, imagen: "imagenes/rest12.jpg" },
-  { nombre: "Restaurante D Mil Sabores", lat: -17.202453352134324, lng: -70.92081802666358, imagen: "imagenes/rest13.jpg" },
+  { nombre: "Restaurante D Mil Sabores", lat: -17.202453352134324, lng: -70.92081802666358, imagen: "imagenes/rest13.jpg" }
 ];
 
 const mercados = [
@@ -59,7 +59,7 @@ const hoteles = [
   { nombre: "Hostal Columbia", lat: -17.195623940386074, lng: -70.93603937164423, imagen: "imagenes/hotel11.jpg"},
   { nombre: "Hospedaje Kelita", lat: -17.19410704265295, lng: -70.93554584522784, imagen: "imagenes/hotel12.jpg" },
   { nombre: "Antawa Hotel", lat: -17.194824495832357, lng: -70.93519715808581, imagen: "imagenes/hotel13.jpg" },
-  { nombre: "Hotel Costa Sol", lat: -17.194132666028636, lng: -70.93272952600387, imagen: "imagenes/hotel14.jpg"},
+  { nombre: "Hotel Costa Sol", lat: -17.194132666028636, lng: -70.93272952600387, imagen: "imagenes/hotel14.jpg"}
 ];
 
 const sitiosTuristicos = [
